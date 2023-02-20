@@ -41,20 +41,6 @@ let productElement = (singleProduct, id) => {
   product__oldPrice.innerText = "₹" + singleProduct["product__oldPrice"];
   product__quantityButton.textContent = "ADD";
 
-  product__quantityButtonCount.style =
-    "border-radius: 0.5rem;background-color: #23963f;color:white;padding:1rem 1rem;width:9;display:none";
-
-  /*
-  product__quantityButtonCount.innerHTML += `
-    <span style="padding-right:1rem" class="decrementQuantity" id="decrement_${i}">-</span>
-    <span id="count_${i}">${count}</span>
-    <span style="padding-left:1rem"class="incrementQuantity" id="increment_${i}">+</span>
-  
-  `;
-  */
-
-  //console.log(singleProduct["count"], id);
-
   product.appendChild(image__section);
   product.appendChild(product__name);
   product.appendChild(product__weight);
